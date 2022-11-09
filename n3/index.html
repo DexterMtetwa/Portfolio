@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+		<title>Hush CV</title>
+		<link rel="stylesheet" href="clearfix.css">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="form.css">
+		<link href="click.css" rel="stylesheet">
+	</head>
+	<body>
+
+		<section id="top" class="Headinfo">
+			<h1>Dexter Mtetwa CV</h1>
+			<img src="self.JPG" class="avatar" alt="Portret Ondrej Pavlas" width="200">
+			<h2 id="name">Resume</h2>
+			<p class="slogan">Software Development, Web Development, Graphic Designing</p><hr>
+
+			<!-- NAVIGACE -->
+			<nav class="navibar">
+				<p class="navi_links">
+					<a href="#Collage" class="menuitem" title="Skocit na vzdelani">About</a>
+					<a href="#Knownledge" class="menuitem" title="Skocit na zkusenosti">Academics</a>
+					<a href="#hobby" class="menuitem" title="Skocit na konicky">Hobbies</a>
+				</p>
+			</nav>
+
+		</section>
+		<div class="content">
+			<section id="Collage">
+				<h2>About</h2>
+				<article>
+					<ul>
+						<li>
+							<h3> About <em>Personal Details</em></h3>
+							<p>
+								<dl>
+									<dt>D.O.B</dt>
+									<dd>-10 January 2001</dd>
+									<dt>E-mail</dt>
+									<dd>-hush@gmail.com</dd>
+									<dt>Qualities</dt>
+									<dd>-Motivated</dd>
+									<dd>-Goal-oriented</dd>
+									<dd>-open minded</dd>
+									<dt>Languages</dt>
+									<dd>-English</dd>
+									<dd>-Shona</dd>
+									<dd>-Deutsch</dd>
+						    </p>
+						</li>
+						<li>
+							<h3>Profile</h3>
+							<p>
+								I am a Software Engineering student at the Harare Institute of Tech.
+								Currently in my Second Year.
+							</p>
+						</li>
+					</ul>
+				</article>
+			</section>
+
+			<section id="Knownledge">
+				<h2>Academics</h2>
+				<article>
+					<ol>
+						<li>
+							<h3>ZIMSEC advanced Level 2019 <em>@ Gokwe High School</em></h3>
+							<p>
+								Results 
+								<ol>
+									<li> Pure Maths            -----  <strong>C</strong></li>
+									<li> Computer Science      -----  <strong>A</strong></li>
+									<li> Chemistry             -----  <strong>R</strong></li>
+									<li> Phhysics              -----  <strong>S</strong></li>
+								</ol>
+							</p>
+						</li>
+					</ol>
+				</article>
+			</section>
+
+
+			<section id="hobby" class="wrap">
+				<h2>Hobbies</h2>
+				<div class="zaliba">
+					<h3>Design</h3>
+					<p class="p-column design">Creativity runs through my veins. I enjoy designing different objects in my spare time.</p>
+				</div>
+
+				<div class="zaliba">
+					<h3>Music</h3>
+					<p class="p-column music">Music opens me up to more feeling and more emotions. It enables me to relat to different situations.</p>
+				</div>
+
+
+				<div class="zaliba">
+					<h3>Debating and Public Speaking</h3>
+					<p class="p-column golf">I am an exceptional debator and public speaker who has advanced to international level competitions. This hobby helps me with my negotiation and commnication skills;</p>
+				</div>
+
+				<div class="zaliba snb">
+					<h3>Reading</h3>
+					<p class="p-column snb">Readings makes me sane and takes me to different worlds timely. I enjoy reading a lot.</p>
+				</div>
+			</section>
+
+			<section id="Contact" class="wrap">
+				<h2>My contact details</h2>
+				<div class="form-wrap float-left">
+					<span>You can use the contact form: </span>
+					<button id="contact-me" onclick="div_show()">Open the form</button>
+					<div class="form-fixed" id="form-fixed"><!-- Contact Us Form -->
+						<form class="popup-text" action="#" method="get"><!-- Napište mi -->
+							<button class="close" onclick="div_hide()">close</button>
+							<fieldset class="form-item inline">
+								<label class="input-txt-icon user" for="username">Username</label>
+								<input type="text" name="username" id="username" placeholder="Your name?" required="">
+							</fieldset>
+							<fieldset class="form-item inline">
+								<label class="input-txt-icon mail" for="email">E-mail to which I will reply</label>
+								<input type="email" name="email" id="email" placeholder="Enter your email" required="">
+							</fieldset>
+							
+							<fieldset class="form-item">
+								<label class="input-txt-icon message" for="msg">Vaše zpráva</label>
+								<textarea name="message" id="msg" placeholder="Write me something.." required=""></textarea>
+							</fieldset>
+							<fieldset class="center">
+								<input type="checkbox" name="terms-agree-check" id="terms-agree" required="">
+								<label for="terms-agree"><a href="#">I agree to the conditions and processing of personal data</a> </label>
+							</fieldset>
+							<button class="submit">Submit</button>
+						</form><!-- Contact Us Form Ends here -->
+					</div>
+				</div>
+
+			<div class="other-contacts float-left">
+				<span>Contact Details:</span>
+					<div class="contacts-container wrap">
+						<ul class="contact_list float-left">
+							<li>
+								<a href="chapudanielj@gmail.com" class="Contact">E-mail</a>
+							</li>
+							<li>
+								<a href="tel:+263 789 0123" class="Contact telephone">Telephone</a>
+							</li>
+							
+						</ul>
+						<div class="float-left">
+							<h5 class="contact address">My addresss</h5>
+							<address>
+								1404, Highglen 7<br>
+								7th Avenue<br>
+								Harare<br>
+							</address>
+						</div>
+					</div>
+
+			</div>
+
+			</section>
+		</div>
+
+		
+		<a href="#top" class="btn" id="BackToTop" >Back to top</a>
+
+		<script>
+			//Function To Display Contact Form
+			function div_show() {
+				document.getElementById("form-fixed").style.display = "block";
+			}
+			//Function to Hide Contact Form
+			function div_hide(){
+			document.getElementById('form-fixed').style.display = "none";
+			}
+		</script>
+	
+</body></html>
